@@ -3,15 +3,12 @@
 
 ## Info
 
-> To work on the assignments, you should place all your code in the `src/main/java/assignment` folder. To test your code, you will find the test setup
+> To work on the assignments, you can either download or clone this repository...
+> <img width="1059" height="555" alt="Screenshot 2026-01-04 at 16 19 09" src="https://github.com/user-attachments/assets/3d3b4c11-fcc2-4db9-aeda-b9b212cf72d3" />
+
+>  you find the lab exercises in the `src/main/java/assignment` folder. To test your code, you will find the test setup
 in the `src/test/java/assignment/TestAssignment.java` folder. There you can choose to run all tests at once or run them one by one.
 >
-> Remember to commit your code frequently and push it to GitHub when you are stuck and want feedback from
-> your group or student assistants.
->
-> When you feel that you have finished the assignments, even if you are not able to solve everything,
-> please push to GitHub. It would give us teachers a better overview of the class
-> progress.
 >
 > Good luck!
 
