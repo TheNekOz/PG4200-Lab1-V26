@@ -1,7 +1,22 @@
 # Lab practice 1
+--
+## Preparations
+
+### Step 1
+
+- Download JetBrains Toolbox
+- Download or update IntelliJ to Community Edition 2025 eller 2025EAP
+
+### Step 2
+
+Create a new project in IntelliJ with the following information:
+- Build system: IntelliJ
+- JDK: Azul Zulu (25.0.1)
+- Download if needed
+- No sample code
 
 ---
-## Exercise 1: Implement algorithm _Linear Search_ on data structure _Array_ in Java.
+## Task: Implement algorithm _Linear Search_ on data structure _Array_ in Java.
 
 - Create a class named _Search_ which will initially only have one instance variable of type Array.
 
