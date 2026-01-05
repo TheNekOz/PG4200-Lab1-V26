@@ -16,11 +16,26 @@ in the `src/test/java/assignment/TestAssignment.java` folder. There you can choo
 
 ## Technology
 
-TODO: instructions  junit6
-
 > Java 25
 
 > JUnit 6
 
 > Meant to be used within IntelliJ IDEA, recommended version: 2025.3
+
+---
+
+## Preparations
+
+### Step 1
+
+- Download JetBrains Toolbox
+- Download or update IntelliJ to Community Edition 2025 eller 2025EAP
+
+### Step 2
+
+Create a new project in IntelliJ with the following information:
+- Build system: IntelliJ
+- JDK: Azul Zulu (25.0.1)
+- Download if needed
+- No sample code
 
