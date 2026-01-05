@@ -18,10 +18,10 @@ Create a new project in IntelliJ with the following information:
 ---
 ## Task: Implement algorithm _Linear Search_ on data structure _Array_ in Java.
 
-- In this folder (`src/main/java/assignment`), create a class named _Search_ which will initially only have one instance variable of type Array.
+- In this folder (`src/main/java/assignment`), create a class named _Search_ which will initially only have declared one int array variable.
 
 
-- Create a constructor inside the _Search_ class with one parameter of type Array for setting the instance variable.
+- Create a constructor inside the _Search_ class with one parameter of type int [] for setting the instance variable.
 
 
 - Create a method _linearSearch_ that finds a value in the array and returns its posisiton. That is the method takes one int typed parameter as an argument...the value you wish to find in your Array. The method returns an int value: the position in the array if you find a match. Otherwise it returns -1.
