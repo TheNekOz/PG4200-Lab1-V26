@@ -30,10 +30,10 @@ public class TestAssignment extends BaseAssignment
 
         Search ls = new Search(arr);
         int actualResult = ls.linearSearch(target);
-        assertEquals(actualResult,-1);
-        assertEquals(ls.linearSearch(34),6);
-        assertEquals(ls.linearSearch(76),0);
-        assertEquals(ls.linearSearch(22),7);
+        assertEquals(-1, actualResult);
+        assertEquals(6, ls.linearSearch(34));
+        assertEquals(0, ls.linearSearch(76));
+        assertEquals(7, ls.linearSearch(22));
 
 
     }
@@ -47,10 +47,10 @@ public class TestAssignment extends BaseAssignment
 
         Search ls = new Search(arr);
         int actualResult = ls.stepsLinearSearch(target);
-        assertEquals(actualResult,8);
-        assertEquals(ls.stepsLinearSearch(34),7);
-        assertEquals(ls.stepsLinearSearch(76),1);
-        assertEquals(ls.stepsLinearSearch(22),8);
+        assertEquals(8, actualResult);
+        assertEquals(7, ls.stepsLinearSearch(34));
+        assertEquals(1, ls.stepsLinearSearch(76));
+        assertEquals(8, ls.stepsLinearSearch(22));
 
     }
 
