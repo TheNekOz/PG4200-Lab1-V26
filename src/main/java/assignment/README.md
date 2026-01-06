@@ -11,7 +11,7 @@
 
 Create a new project in IntelliJ with the following information:
 - Build system: IntelliJ
-- JDK: Azul Zulu (25.0.1)
+- JDK: opendJDK-25
 - Download if needed
 - No sample code
 
