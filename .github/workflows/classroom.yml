@@ -1,0 +1,46 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v5.0.1
+    - name: Set up JDK 25
+      uses: actions/setup-java@v5.1.0
+      with:
+          distribution: 'oracle'
+          java-version: '25'
+          cache: 'maven'
+    - name: Search test
+      id: search-test
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Search test
+        setup-command: ''
+        command: mvn -Dtest=TestAssignment#searchTest test
+        timeout: 10
+        points: 10
+    - name: Steps test
+      id: steps-test
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Steps test
+        setup-command: ''
+        command: mvn -Dtest=TestAssignment#stepsTest test
+        timeout: 10
+        points: 5
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        SEARCH-TEST_RESULTS: "${{steps.search-test.outputs.result}}"
+        STEPS-TEST_RESULTS: "${{steps.steps-test.outputs.result}}"
+      with:
+        runners: search-test,steps-test
